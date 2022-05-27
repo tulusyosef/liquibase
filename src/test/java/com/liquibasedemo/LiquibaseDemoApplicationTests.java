@@ -1,13 +1,13 @@
-package com.liquibase;
+package com.liquibasedemo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class LiquibaseApplicationTests {
+class LiquibaseDemoApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    void contextLoads() {
+    }
 
 }
