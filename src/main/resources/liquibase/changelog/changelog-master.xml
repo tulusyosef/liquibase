@@ -7,6 +7,11 @@
     http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
     <include file="src/main/resources/liquibase/changeset/createtable-init.xml"/>
-<!--    <include file="src/main/resources/db/changelog/changes/Init-InsertTable.xml"/>-->
+
+    <changeSet id="create-sql" author="julius">
+        <sqlFile path="src/main/resources/liquibase/changeset/create-sql.sql"></sqlFile>
+    </changeSet>
+
+    <include file="src/main/resources/liquibase/changeset/insert-init.xml"/>
 
 </databaseChangeLog>
