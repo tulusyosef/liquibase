@@ -16,12 +16,11 @@
 
     <include file="src/main/resources/liquibase/changeset/init-table-3.xml"/>
 
-    <include file="src/main/resources/liquibase/changeset/insert-init.xml"/>
+<!--    <include file="src/main/resources/liquibase/changeset/insert-init.xml"/>-->
 
-    <changeSet id="create-sql" author="julius">
-        <sqlFile path="src/main/resources/liquibase/changeset/create-sql.sql"></sqlFile>
-    </changeSet>
-
+<!--    <changeSet id="create-sql" author="julius">-->
+<!--        <sqlFile path="src/main/resources/liquibase/changeset/create-sql.sql"></sqlFile>-->
+<!--    </changeSet> -->
 
 
 </databaseChangeLog>

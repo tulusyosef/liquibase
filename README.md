@@ -55,11 +55,16 @@ run the `mvn liquibase:update -P dev` command for update in PostgreSQL Developme
 
 run the `mvn liquibase:update -P prod` command for update in PostgreSQL Production environment.
 
+run the `mvn liquibase:update -P mssql` command for update in SQL Server environment.
+
 ### Liquibase Update History
 run the `mvn liquibase:history` command.
 
-### Liquibase Tag
-run the `mvn liquibase:tag -Dliquibase.tag=<nama tag>` command.
+### Liquibase rollback
+#### rollback by tag
+run the `mvn liquibase:rollback -Dliquibase.rollbackTag="<name tag>"` command.
+#### rollback by count
+run the `mvn liquibase:rollback -Dliquibase.rollbackCount=<int>` command.
 
 
 ## [Contact us](https://www.liquibase.org/contact)
