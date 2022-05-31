@@ -7,3 +7,6 @@ create table person
         primary key (id)
 );
 
+drop table person;
+
+UPDATE liquibase.user t SET t.last_name = 'test' WHERE t.id = 1;

@@ -8,10 +8,20 @@
 
     <include file="src/main/resources/liquibase/changeset/createtable-init.xml"/>
 
+    <changeSet id="add tag" author="ivan wijaya">
+        <tagDatabase tag="create init"/>
+    </changeSet>
+
+    <include file="src/main/resources/liquibase/changeset/init-table-2.xml"/>
+
+    <include file="src/main/resources/liquibase/changeset/init-table-3.xml"/>
+
+    <include file="src/main/resources/liquibase/changeset/insert-init.xml"/>
+
     <changeSet id="create-sql" author="julius">
         <sqlFile path="src/main/resources/liquibase/changeset/create-sql.sql"></sqlFile>
     </changeSet>
 
-    <include file="src/main/resources/liquibase/changeset/insert-init.xml"/>
+
 
 </databaseChangeLog>
