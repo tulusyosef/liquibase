@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<databaseChangeLog
-        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
-        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
     http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
-    <include file="src/main/resources/liquibase/changeset/createtable-init.xml"/>
+    <!-- <include file="src/main/resources/liquibase/changeset/createtable-init.xml" /> -->
 
-    <changeSet id="add tag" author="ivan wijaya">
-        <tagDatabase tag="create init"/>
+    <!-- <changeSet id="add tag" author="tty">
+        <tagDatabase tag="create init" />
+    </changeSet> -->
+
+    <!-- <include file="src/main/resources/liquibase/changeset/init-table-2.xml" /> -->
+
+    <!-- <include file="src/main/resources/liquibase/changeset/init-table-3.xml" /> -->
+
+    <!--    <include file="src/main/resources/liquibase/changeset/insert-init.xml"/>-->
+
+    <changeSet id="create1" author="tty">
+        <sqlFile path="src/main/resources/liquibase/changeset/create1.sql"></sqlFile>
     </changeSet>
 
-    <include file="src/main/resources/liquibase/changeset/init-table-2.xml"/>
-
-    <include file="src/main/resources/liquibase/changeset/init-table-3.xml"/>
-
-<!--    <include file="src/main/resources/liquibase/changeset/insert-init.xml"/>-->
-
-<!--    <changeSet id="create-sql" author="julius">-->
-<!--        <sqlFile path="src/main/resources/liquibase/changeset/create-sql.sql"></sqlFile>-->
-<!--    </changeSet> -->
+    <!-- <include file="src/main/resources/liquibase/changeset/create13.sql" /> -->
 
 
 </databaseChangeLog>
