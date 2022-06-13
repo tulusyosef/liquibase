@@ -13,9 +13,34 @@
     <!-- <include file="src/main/resources/liquibase/changeset/init-table-3.xml" /> -->
 
     <!--    <include file="src/main/resources/liquibase/changeset/insert-init.xml"/>-->
+    <preConditions>
+        <or>
+            <and>
+                <dbms type="postgres" />
+                <runningAs username="postgres1" />
+            </and>
+            <!-- <and>
+                <dbms type="mssql" />
+                <runningAs username="sa" />
+            </and>
+                 <dbms type="oracle" />
+                <runningAs username="SYSTEM" /> -->
+        </or>
+    </preConditions>
 
-    <changeSet id="create1" author="tty">
-        <sqlFile path="src/main/resources/liquibase/changeset/create1.sql"></sqlFile>
+
+    <changeSet id="create0010" author="tty2">
+        <sqlFile path="src/main/resources/liquibase/changeset/0010_create_category3mvn.sql"></sqlFile>
+    </changeSet>
+
+    <changeSet id="create0020" author="tty">
+        <sqlFile path="src/main/resources/liquibase/changeset/0020_create_category4mvn.sql"></sqlFile>
+    </changeSet>
+    <changeSet id="insert 0030" author="tty">
+        <sqlFile path="src/main/resources/liquibase/changeset/0030_insert_category3mvn.sql"></sqlFile>
+    </changeSet>
+    <changeSet id="insert 0040" author="tty">
+        <sqlFile path="src/main/resources/liquibase/changeset/0040_insert_category4mvn.sql"></sqlFile>
     </changeSet>
 
     <!-- <include file="src/main/resources/liquibase/changeset/create13.sql" /> -->

@@ -14,7 +14,7 @@
     <description>liquibase-demo</description>
     <properties>
         <java.version>16</java.version>
-        <liquibase.version>4.10.0</liquibase.version>
+        <liquibase.version>4.11.0</liquibase.version>
         <!-- <mysql.version>8.0.29</mysql.version> -->
         <postgresql.verion>42.3.6</postgresql.verion>
         <!-- <sqlserver.version>10.2.0.jre8</sqlserver.version> -->
