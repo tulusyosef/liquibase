@@ -16,8 +16,8 @@
     <preConditions>
         <or>
             <and>
-                <dbms type="postgres" />
-                <runningAs username="postgres1" />
+                <dbms type="postgresql" />
+                <runningAs username="postgres" />
             </and>
             <!-- <and>
                 <dbms type="mssql" />
